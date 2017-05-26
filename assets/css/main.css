@@ -1,0 +1,88 @@
+div#map{
+  width: 100%;
+  height: 90vh;
+}
+.find{
+  width: 100%;
+  background-color: orange;
+  height: 6vh;
+  color: white;
+  text-align: center;
+  padding-top: 2vh;
+}
+
+.encuentrame{
+  width: 100%;
+  background-color: #f7b617;
+  height: 30vh;
+  padding-top: 20px;
+}
+.iconos{
+  color: white;
+  padding: 0 10px;
+}
+.boton{
+  padding-left: 10%;
+  border-left: solid 1px white;
+}
+.form-control{
+  width: 80%!important;
+  background: #f7b617;
+  border: 2px solid white;
+  color: white;
+  display: inline-block;
+
+}
+.form-control:focus{
+  border-color: white;
+}
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+.formulario{
+  height: 100%;
+
+}
+
+.tarifa{
+  width: 200px;
+  height: 200px;
+  color: #f7b617;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+.none{
+  display: none;
+}
+
+@media (min-height:600px){
+  .encuentrame{
+    height: 9vh;
+  }
+  .formulario{
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .encuentrame{
+    padding-top: 0;
+  }
+  .boton{
+    padding-left: 0;
+  }
+}

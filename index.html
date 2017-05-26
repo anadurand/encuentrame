@@ -4,17 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Encuentrame</title>
   </head>
   <body>
-    <div class="" id="map">
+      <div class="encuentrame container">
+        <form class="form-inline row formulario">
+          <div class="form-group col-xs-12 col-md-4">
+            <span class="iconos glyphicon glyphicon-record"></span>
+            <input type="text" class="form-control" id="partida" placeholder="Ingresa tu punto de partida">
+          </div>
+          <div class="form-group col-xs-12 col-md-4">
+            <span class="iconos glyphicon glyphicon-send"></span>
+            <input type="text" class="form-control" id="llegada" placeholder="Ingresa tu destino">
+          </div>
+          <div class="col-xs-5 col-xs-offset-1 col-md-2 col-md-offset-0">
+            <button type="button" class="btn btn-default" id="trazar-Ruta">Trazar Ruta</button>
+          </div>
+          <div class="col-xs-5 col-md-2 boton">
+            <button type="button" class="btn btn-default" id="encuentrame">Encuentrame</button>
+          </div>
+        </form>
+      </div>
+      <div class="" id="map"></div>
+      <div class="none tarifa" id="tarifa">
 
-    </div>
-    <div class="find" id="encuentrame">
+      </div>
+
+    <!-- <div class="find" id="encuentrame">
       Encuentrame
-    </div>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCggHFUL-v6lMEWpykkEEmqaDwqzcS3ASs&callback=initMap" charset="utf-8"></script>
-    <script src="main.js" charset="utf-8"></script>
+    </div> -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCggHFUL-v6lMEWpykkEEmqaDwqzcS3ASs&callback=initMap&libraries=places"></script>
+    <script src="assets/js/jquery-3.2.1.slim.min.js" charset="utf-8"></script>
+    <script src="assets/js/main.js" charset="utf-8"></script>
   </body>
 </html>
